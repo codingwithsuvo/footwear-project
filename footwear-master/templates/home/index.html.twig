@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Home{% endblock %}
+{% block front_nav_right_section %}{% endblock %}
+
+{% block body %}
+<div class="carousel_wrapper">
+  <div class="carousel">
+    <div class="slide one">
+      <img src="uploads/images/brownshoes.jpeg" />
+    </div>
+    <div class="slide two">
+      <img src="uploads/images/brownboots.jpeg" />
+    </div>
+    <div class="slide three">
+      <img src="uploads/images/whitewedges.jpeg" />
+    </div>
+    <div class="slide four">
+      <img src="uploads/images/sandals.jpeg" />
+    </div>
+    <div class="slide five">
+      <img src="uploads/images/brownloafers.jpeg" />
+    </div>
+    <div class="slide six">
+      <img src="uploads/images/greyshoes.jpeg" />
+    </div>
+    <div class="slide seven">
+      <img src="uploads/images/blue.jpeg" />
+    </div>
+    <div class="slide eight">
+      <img src="uploads/images/blackshoes.jpeg" />
+    </div>
+    <div class="slide nine">
+      <img src="uploads/images/ancle.jpeg" />
+    </div>
+  </div><!-- / .carousel -->
+</div><!-- / .carousel_wrapper -->
+
+	
+
+<div class="container">
+    <div class="row" style="padding-top:350px;">
+        <div class="row">
+            {% for product in products %}
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <div class="col-sm-8">
+                            <div class="card-body d-flex flex-column align-items-start">
+                                {# <strong class="d-inline-block mb-2 text-primary">World</strong> #}
+                                <h3 class="mb-0">
+                                
+                                    <a class="text-dark" href="{{path('show_product', {id: product.getId()})}}">{{product.getFootwearType()}}</a>
+                                </h3>
+                                <div class="mb-1 text-muted">Price :{{product.getSellingPrice()|striptags|slice(0, 50)}} Rs</div>
+                                <p class="card-text mb-auto">Colour :{{product.getColour()|striptags|slice(0, 50)}}</p>
+                                <a href="{{path('show_product', {id: product.getId()})}}">Continue reading</a>
+                                
+                            </div>
+                        </div>
+                        {# <div class="col-sm-4"><img src="{{('uploads/products/' ~ product.getImage()) }}" width="170px" height="60px" alt="logo"></div> #}
+                        <div class="col-sm-4"><img data-src="holder.js/200x250?theme=thumb" width="170px" height="150px" alt="Thumbnail [200x250]" style="max-width: 100%;" src="{{('uploads/images/' ~ product.getProductImage()) }}" data-holder-rendered="true"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block javascripts %}{% endblock %}
+

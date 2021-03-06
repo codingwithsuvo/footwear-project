@@ -1,0 +1,465 @@
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.display-3{
+	text-align: center;
+	color:black;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+	background:url("https://wallpaperaccess.com/full/2797582.jpg");
+}
+
+.box-layout, .form {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	background: #fff;
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form{
+	max-width: 600px;
+	margin-top: 1px;
+}
+
+.login-form{
+	max-width: 400px;
+	margin-top: 5px;
+}
+
+.form>.booking-bg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 250px;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.form>form {
+	padding: 30px;
+	border: 1px solid #f9fafc;
+	border-left: 0px;
+}
+
+.form .form-header {
+	margin-bottom: 30px;
+}
+
+.form .form-header h2 {
+	margin: 0;
+	margin-bottom: 0px;
+	font-weight: 700;
+	color: #122244;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+
+.form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.form .form-control {
+	background-color: #f7f9fa;
+	height: 40px;
+	padding: 0px 10px;
+	border-radius: 0px;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	color: #122244;
+	border: 0px;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: inset 0 1px 4px rgba(181, 193, 204, 0.3);
+	box-shadow: inset 0 1px 4px rgba(181, 193, 204, 0.3);
+}
+
+.form .form-control::-webkit-input-placeholder {
+	color: #dde3e8;
+}
+
+.form .form-control:-ms-input-placeholder {
+	color: #dde3e8;
+}
+
+.form .form-control::placeholder {
+	color: #dde3e8;
+}
+
+.form .form-control:focus {
+	-webkit-box-shadow: inset 0 1px 4px rgba(181, 193, 204, 0.3);
+	box-shadow: inset 0 1px 4px rgba(181, 193, 204, 0.3);
+}
+
+.form input[type="date"].form-control:invalid {
+	color: #dde3e8;
+}
+
+.form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+}
+
+.form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	color: #dddee9;
+	font-size: 14px;
+}
+
+.form .form-label {
+	color: #b5c1cc;
+	font-weight: 700;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 14px;
+	z-index: 1;
+}
+
+.form .form-btn {
+	margin-top: 10px;
+}
+
+.form .submit-btn {
+	color: #fff;
+	background-color: #6499ff;
+	font-weight: 700;
+	padding: 13px 35px;
+	font-size: 16px;
+	border: none;
+	width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+	.form>.booking-bg {
+		display: none;
+	}
+	.form>form {
+		margin-left: 0px;
+	}
+}
+.navbar-default{
+	background:url("https://lh3.googleusercontent.com/proxy/_jXN5OsXpHHOaTsXtvyESHxPXA31wJ_53nA8m_aSZjZrYogDO8-6jMPS04XxhkQAiLr0w5KL_Dv5IN4BghW2qB6BMDb1h1lt10hb5a3091Q");
+}
+.p-20x{
+	padding: 20px;
+}
+.form-check-label{
+	position: relative;
+	top: -2px;
+	font-weight: normal;
+}
+.form-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.form-group ul li:before {
+    content: "ERROR";
+    background: #B0413E;
+    font-size: 10px;
+    padding: 2px 5px;
+    color: #fff;
+    margin-right: 10px
+}
+.edit-link{
+	color: #000000;
+	font-size: 16px;
+	border: 1px solid #eeeeee;
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+.delete-link{
+	color: #B0413E;
+	font-size: 16px;
+	border: 1px solid #eeeeee;
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+
+* {
+
+	box-sizing: border-box; /* Too much math below to be concerned with standard CSS Box Model element dimensions calculations. Let's not have to account for padding/margins/borders on anything here. */
+	
+	  }
+	
+	 
+	
+	  body {
+	
+	margin: 0;
+	
+	/* background-image: url('http://www.desktopwallpaperhd.net/wallpapers/18/d/andromeda-space-background-computer-images-187549.jpg'); */
+	
+	background-attachment: fixed;
+	
+	background-size: cover;
+	
+	  }
+	
+	 
+	
+	 
+	
+	 
+	
+	  .carousel_wrapper {
+	
+	position: relative;
+	
+	width: 320px;
+	
+	margin: 1px auto 0 auto;
+	
+	perspective: 1000px;
+	
+	  }
+	
+	 
+	
+	  .carousel {
+	
+	position: absolute;
+	
+	width: 100%;
+	
+	height: 100%;
+	
+	transform-style: preserve-3d;
+	
+	transform: rotateY(-360deg) translateZ(-412px); /* add reverse transformation from the slides */
+	
+	animation: swirl 40s steps(10000, end) infinite; /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
+	
+	  }
+	
+	 
+	
+	  .slide {
+	
+	position: absolute;
+	
+	top: 10px;
+	
+	left: 10px;
+	
+	width: 300px;
+	
+	height: 187px;
+	
+	  }
+	
+	 
+	
+	  .slide img {
+	
+	width: 280px;
+	
+	height: 175px;
+	
+	border: 1px inset rgba(24, 3, 3, 0.863);
+	
+	/* border-radius: 100%; */
+	
+	/* box-shadow: 0 0 15px 3px; */
+	
+	  }
+	
+	 
+	
+	  /*#sun {
+	
+	position: absolute;
+	
+	width: 400px;
+	
+	height: 400px;
+	
+	border-radius: 100%;
+	
+	background-image: url('https://chivethebrigade.files.wordpress.com/2012/03/sun-920-32.jpg');
+	
+	background-position: -264px -69px;
+	
+	box-shadow: 0 0 30px 10px orange;
+	
+	  }*/
+	
+	 
+	
+	  /*
+	
+	  9 Slides total: 360 Degrees (full circle) --> 360/9 = 40 --> our increment for rotation
+	
+	 
+	
+	  Some math. Consider how the carousel will be set up. It's going to be a 3D circle, like an orbit. The orientation will be such that it would be like setting a ring down on a table, then bending down and looking at the ring head on from the edge of the table. The main "front" image will be entirely front-facing. The other images will be rotated slightly to make a full circle. You could sketch this out in 2D from a bird's eye view, and you'd end up with a picture like the following:
+	
+	 
+	
+	  https://cl.ly/image/2P3E1U0W0c29
+	
+	 
+	
+	  Each triangle/piece would be a slide, hence 9 pieces. That being said, let's do some calculations, but we'll use the dimensions of our elements rather than those in the picture.
+	
+	 
+	
+	  So, we're rotating all the slides in 40º increments relative to each other, because 360º makes a full circle, and we have 9 elements: 360/9 = 40
+	
+	 
+	
+	  In the picture above, we want to find the radius of the circle (which isn't exactly a circle because it's made up of triangles). So we can cut each triangle in half and solve for `r` (radius). We can solve for `r` using some geometry and our own elements' dimensions.
+	
+	 
+	
+	  The width of the slides is 300px. We're going to split those triangles in half and use the TANGENT function in geometry/trigonemty to solve for `r`. And since we're splitting each of the 9 triangles (the slides) in half for this, we need to account for the fact that our key angle is now going to be 20º and not 40º. We can solve for `r` by taking our smaller triangles' width (150px) and dividing by the tangent of 20º (in degrees, not radians). So:
+	
+	 
+	
+	 150
+	
+	r =  -----------
+	
+	tan(20º)
+	
+	 
+	
+	  Here's a screenshot of me doing the calculations in JavaScript, right in the browser console!
+	
+	 
+	
+	  Math things: https://cl.ly/image/1t0j1V2Y2l2Z
+	
+	 
+	
+	  So, `r` is (about) 412px long! This means we need to TRANSLATE the slides in the Z 3-dimensional plane by 412px. This should be done AFTER the rotateY transformation.
+	
+	  */
+	
+	 
+	
+	  .slide.one {
+	
+	transform: rotateY(0deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.two {
+	
+	transform: rotateY(40deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.three {
+	
+	transform: rotateY(80deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.four {
+	
+	transform: rotateY(120deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.five {
+	
+	transform: rotateY(160deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.six {
+	
+	transform: rotateY(200deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.seven {
+	
+	transform: rotateY(240deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.eight {
+	
+	transform: rotateY(280deg) translateZ(412px);
+	
+	  }
+	
+	  .slide.nine {
+	
+	transform: rotateY(320deg) translateZ(412px);
+	
+	  }
+	
+	 
+	
+	  /*
+	
+	  CSS3 ANIMATION
+	
+	  -------------------
+	
+	  Simply rotates the carousel around the Y axis by using rotateY and starting at initial value, -360º, and going to final value 0º, then resetting.
+	
+	  */
+	
+	 
+	
+	  @keyframes swirl {  
+	
+	from {
+	
+	 transform: rotateY(-360deg);
+	
+	}
+	
+	to {
+	
+	 transform: rotateY(0deg);
+	
+	}
+	
+	  } 
